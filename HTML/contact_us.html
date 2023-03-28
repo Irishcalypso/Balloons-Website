@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--doctype was missing-->
+<html lang="en">
+<head>
+        <title>Contact Us</title> <!--forward slash missing in end title tag-->
+        <link type="text/css" rel="stylesheet" href="../CSS/balloons.css">
+  <style>
+    form{
+     width: 30em;
+    }
+    
+    label, input, textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    .form-control {
+        margin-bottom: 1em;
+    }
+    
+    textarea { /*Extends starting height */
+        min-height: 10em;
+    }
+    
+    /* Why the descendant selector here? */
+    .form-control input,
+    .form-control textarea {
+        padding: 0.5em;
+    }
+
+
+  </style>
+  </head>
+    <body>
+
+    <!--List Exercise-->
+    
+
+    <h1>Contact Us</h1>
+    <ul class="navigation">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact_us.html">Contact us</a></li>    </ul>
+    
+      <h2>Contact</h2>
+
+    <p class = "introduction">Contact details and map.<p>
+
+    <p>Get in touch with our sales team for more details</p>
+    
+    <form id="myForm" action="">
+
+      <div class="form-control">
+              <label for="fullName">Your full name</label>
+              <input required id="fullName" type="text" name="full_name" />
+      </div>
+  
+              <label for="emailAddress">Your email</label>
+              <input required id="emailAddress" type="email" name="email_address" />
+              <label for="age">Your age</label>
+              <input type="number" name="age" id="age" min="1" max="150">
+              <label for="story">Your story</label>
+              <textarea id="story" name="story"></textarea>
+  
+  
+          <input type="submit" value="Go!" />
+  
+      </form>
+
+    </body>
+</html>
